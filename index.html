@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesin Turing - Penambahan Biner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mesin Turing</h1>
+            <p>Simulasi Penambahan Biner</p>
+        </header>
+        <main>
+            <div class="input-section">
+                <input type="text" id="input1" placeholder="Masukkan biner pertama" maxlength="8">
+                <input type="text" id="input2" placeholder="Masukkan biner kedua" maxlength="8">
+                <button onclick="startSimulation()">Mulai Penambahan</button>
+            </div>
+            <div class="output-section">
+                <h2>Proses:</h2>
+                <div id="processTape" class="tape"></div>
+                <button id="nextStep" onclick="nextStep()" style="display: none;">Langkah Berikutnya</button>
+                <h2>Hasil Akhir:</h2>
+                <div id="outputTape" class="tape"></div>
+            </div>
+            <div class="formula-section">
+                <h2>Rumus Perhitungan</h2>
+                <div id="formula"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Mesin Turing Simulator Penambahan Biner</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
